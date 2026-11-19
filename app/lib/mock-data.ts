@@ -451,28 +451,28 @@ export const statsByRole: Record<Role, { label: string; value: string; change: s
 
 export const faqsList = [
   {
-    question: "Do I need to know exactly what to ask?",
+    question: "How does in-person session tracking work on Melhik?",
     answer:
-      "Not at all. Share the part that feels confusing—even if it's just 'I don't know where to start.' You and your tutor can unpack it together, step by step.",
+      "Your tutor meets with the student in person for face-to-face instruction. After each session, the tutor logs attendance, topics covered, student comprehension, and homework directly onto Melhik for complete transparency.",
   },
   {
-    question: "Can I choose how my tutor explains things?",
+    question: "How do parents monitor face-to-face tutoring sessions?",
     answer:
-      "Yes. Tell us if examples, visuals, step-by-step logic, or working through a problem together helps you most. We use your learning preferences to guide your match.",
+      "Parents have a dedicated Family Dashboard where they can view verified session logs, tutor notes, attendance history, and subject progress without having to interrupt the lesson.",
   },
   {
-    question: "How much does a session cost?",
+    question: "How does Melhik help students between in-person lessons?",
     answer:
-      "You'll see each tutor's transparent hourly price and session length before you book, so you can choose the personalized help that comfortably fits your budget.",
+      "Students can review in-person lesson recaps, track upcoming session dates, practice recommended problem sets, and prepare specific questions for their tutor's next visit.",
   },
   {
-    question: "What happens after a session finishes?",
+    question: "How do administrators maintain tutoring quality and safety?",
     answer:
-      "The session ends, but your learning thread stays with you forever. Your question, the tutor's worked steps, diagrams, and a bite-sized practice exercise are saved on your student dashboard.",
+      "Melhik admins supervise all active in-person tutor pairings, verify tutor credentials, review session completion logs, and track student satisfaction and progress across the platform.",
   },
   {
-    question: "Can parents oversee progress without getting in the way?",
+    question: "Can tutors easily manage multiple in-person students?",
     answer:
-      "Yes! Parents receive a clean Family Dashboard showing curriculum milestones, upcoming sessions, tutor recap summaries, and transparent billing.",
+      "Yes! Tutors have a streamlined dashboard to organize student rosters, log session hours, record lesson milestones, and communicate feedback directly to parents and admins.",
   },
 ];
