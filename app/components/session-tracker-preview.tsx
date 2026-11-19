@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Check, Clock, CalendarDays, Star, BookOpen, TrendingUp } from "lucide-react";
+import { Check, Clock, CalendarDays, BookOpen, TrendingUp } from "lucide-react";
 
 const sessionLogs = [
   {
@@ -12,8 +12,7 @@ const sessionLogs = [
     date: "Today, 3:30 PM",
     duration: "55 min",
     status: "completed" as const,
-    rating: 5,
-    note: "Jordan mastered the quadratic formula and completed 4 practice problems independently.",
+    note: "Mastered the quadratic formula.",
   },
   {
     id: 2,
@@ -23,8 +22,7 @@ const sessionLogs = [
     date: "Yesterday, 10:00 AM",
     duration: "50 min",
     status: "completed" as const,
-    rating: 4,
-    note: "Good progress on free-body diagrams. Needs more practice with friction problems.",
+    note: "Practised free-body diagrams.",
   },
   {
     id: 3,
@@ -34,7 +32,6 @@ const sessionLogs = [
     date: "Thu, Nov 21",
     duration: "45 min",
     status: "upcoming" as const,
-    rating: null,
     note: null,
   },
 ];
@@ -73,9 +70,9 @@ export default function SessionTrackerPreview() {
         <>
           {/* Sessions View */}
           <div className="flex items-center justify-between text-[11px] font-bold uppercase tracking-[0.14em]">
-            <span className="text-[#88958c]">Recent sessions</span>
+            <span className="text-[#88958c]">Lesson History</span>
             <span className="flex items-center gap-1.5 text-[#c9f35b]">
-              <span>3 this week</span>
+              <span>This week</span>
             </span>
           </div>
 
@@ -135,20 +132,8 @@ export default function SessionTrackerPreview() {
 
                 {session.note && (
                   <p className="mt-2 rounded-xl bg-[#252e27] px-3 py-2 text-[11px] leading-relaxed text-[#a4b1a7]">
-                    📝 <span className="font-semibold text-[#d1ddd4]">Tutor note:</span>{" "}
                     {session.note}
                   </p>
-                )}
-
-                {session.rating && (
-                  <div className="mt-2 flex items-center gap-1">
-                    {Array.from({ length: session.rating }).map((_, i) => (
-                      <Star
-                        key={i}
-                        className="h-3 w-3 fill-[#c9f35b] text-[#c9f35b]"
-                      />
-                    ))}
-                  </div>
                 )}
               </div>
             ))}
