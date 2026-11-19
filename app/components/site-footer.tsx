@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, ClipboardCheck } from "lucide-react";
 
 export default function SiteFooter() {
 
@@ -15,17 +15,17 @@ export default function SiteFooter() {
               href="/"
               className="inline-flex items-baseline text-[26px] font-extrabold tracking-[-0.06em] text-[#1c221e]"
             >
-              unstuck
+              melhik
               <span className="ml-1 inline-block h-3 w-3 rounded-full bg-[#c9f35b]" />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-[#686f62]">
-              Little steps. Real understanding. Tutoring built around your exact question,
-              not an endless directory of strangers.
+              Every in-person lesson tracked. Every milestone visible. The monitoring
+              platform that keeps students, parents, and tutors accountable.
             </p>
             <div className="mt-6 flex items-center gap-3 text-xs font-semibold text-[#878e81]">
-              <span className="rounded-full bg-[#e3e6d8] px-3 py-1">Zero pressure</span>
-              <span className="rounded-full bg-[#e3e6d8] px-3 py-1">Vetted specialists</span>
-              <span className="rounded-full bg-[#e3e6d8] px-3 py-1">Saved threads</span>
+              <span className="rounded-full bg-[#e3e6d8] px-3 py-1">Session logs</span>
+              <span className="rounded-full bg-[#e3e6d8] px-3 py-1">Progress reports</span>
+              <span className="rounded-full bg-[#e3e6d8] px-3 py-1">Full transparency</span>
             </div>
           </div>
 
@@ -41,23 +41,18 @@ export default function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link href="/#subjects" className="text-[#495144] hover:text-[#181d19]">
-                  Subjects & Topics
+                <Link href="/#who-is-it-for" className="text-[#495144] hover:text-[#181d19]">
+                  Who it&apos;s for
                 </Link>
               </li>
               <li>
-                <Link href="/#why-unstuck" className="text-[#495144] hover:text-[#181d19]">
-                  Why Unstuck
+                <Link href="/#why-melhik" className="text-[#495144] hover:text-[#181d19]">
+                  Why Melhik
                 </Link>
               </li>
               <li>
                 <Link href="/#faq" className="text-[#495144] hover:text-[#181d19]">
                   Frequently Asked Questions
-                </Link>
-              </li>
-              <li>
-                <Link href="/ask" className="font-semibold text-[#2b724f] hover:text-[#1a4a33]">
-                  Ask a Question →
                 </Link>
               </li>
             </ul>
@@ -66,7 +61,7 @@ export default function SiteFooter() {
           {/* Col 3: Dedicated Portals */}
           <div>
             <h4 className="text-xs font-bold uppercase tracking-[0.16em] text-[#737b6d]">
-              Workspaces
+              Dashboards
             </h4>
             <ul className="mt-4 space-y-2.5 text-sm">
               <li>
@@ -112,24 +107,25 @@ export default function SiteFooter() {
           {/* Col 4: Callout Card */}
           <div className="rounded-2xl border border-[#d8dacf] bg-[#fffefa] p-6 shadow-sm">
             <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#697263]">
-              <Sparkles className="h-4 w-4 text-[#8cbd22]" />
-              <span>Ready for clarity?</span>
+              <ClipboardCheck className="h-4 w-4 text-[#8cbd22]" />
+              <span>Start tracking today</span>
             </div>
             <p className="mt-2 text-sm text-[#434b3f]">
-              Take 30 seconds to type out your sticky question. We will do the matching.
+              Sign up in 30 seconds. Connect with your tutor and start logging
+              every in-person session.
             </p>
             <Link
-              href="/ask"
+              href="/signup"
               className="mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-[#1b221d] py-2.5 text-xs font-bold text-white transition-transform hover:scale-[1.02]"
             >
-              <span>Start with your question</span>
+              <span>Create your account</span>
               <ArrowRight className="h-3.5 w-3.5 text-[#c9f35b]" />
             </Link>
           </div>
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[#d8dacf] pt-8 text-xs text-[#7d8477] sm:flex-row">
-          <p>© 2026 Melhik / unstuck. All rights reserved.</p>
+          <p>© 2026 Melhik. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <span className="cursor-pointer hover:text-[#252c23]">Privacy Policy</span>
             <span className="cursor-pointer hover:text-[#252c23]">Terms of Service</span>
