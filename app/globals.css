@@ -11,8 +11,8 @@ html {
 
 body {
   margin: 0;
-  background: #f7f7ef;
-  color: #20231f;
+  background: #edf5f6;
+  color: #123f46;
   font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
@@ -30,4 +30,75 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #aab09e;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark body {
+  background: #082f36;
+  color: #f4fbfc;
+}
+
+html.dark [class*="bg-[#f7f7ef]"],
+html.dark [class*="bg-[#edf5f6]"] {
+  background-color: #082f36 !important;
+}
+
+html.dark [class*="bg-[#f2f3ea]"],
+html.dark [class*="bg-[#d7e9ed]"],
+html.dark [class*="bg-[#f9faf4]"],
+html.dark [class*="bg-[#e7f1f3]"] {
+  background-color: #0e3b43 !important;
+}
+
+html.dark [class*="bg-[#fffefa]"],
+html.dark [class*="bg-white"] {
+  background-color: #124a54 !important;
+}
+
+html.dark [class*="text-[#20231f]"],
+html.dark [class*="text-[#1a211c]"],
+html.dark [class*="text-[#1b221d]"],
+html.dark [class*="text-[#1c221e]"],
+html.dark [class*="text-[#123f46]"] {
+  color: #f4fbfc !important;
+}
+
+html.dark [class*="text-[#686f63]"],
+html.dark [class*="text-[#60685c]"],
+html.dark [class*="text-[#61695c]"],
+html.dark [class*="text-[#6d7568]"],
+html.dark [class*="text-[#788172]"] {
+  color: #b9d1d5 !important;
+}
+
+html.dark [class*="border-[#dcded3]"],
+html.dark [class*="border-[#d6dad0]"],
+html.dark [class*="border-[#d7dad0]"],
+html.dark [class*="border-[#c3dce1]"] {
+  border-color: #28616b !important;
+}
+
+html.dark [class*="bg-[#c9f35b]"],
+html.dark [class*="bg-[#fbb21d]"] {
+  background-color: #fbb21d !important;
+  color: #082f36 !important;
+}
+
+html.dark [class*="text-[#c9f35b]"] {
+  color: #fbb21d !important;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #0e3b43;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #397782;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #fbb21d;
 }
