@@ -65,15 +65,10 @@ export default function Home() {
                   <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                 </Link>
 
-                <Link
-                  href="#how-it-works"
-                  className="text-sm font-bold text-[#444c40] underline decoration-[#c9f35b] decoration-2 underline-offset-8 transition-colors hover:text-[#181d19]"
-                >
-                  See how it works
-                </Link>
+                
               </div>
 
-              <div className="mt-8 flex items-center gap-6 border-t border-[#d8dacf] pt-6 text-xs font-semibold text-[#666f60]">
+              {/* <div className="mt-8 flex items-center gap-6 border-t border-[#d8dacf] pt-6 text-xs font-semibold text-[#666f60]">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-[#2b724f]" />
                   <span>Face-to-face attendance logs</span>
@@ -86,7 +81,7 @@ export default function Home() {
                   <CheckCircle2 className="h-4 w-4 text-[#2b724f]" />
                   <span>Admin quality oversight</span>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Hero Right: Live Session Tracker Preview */}
