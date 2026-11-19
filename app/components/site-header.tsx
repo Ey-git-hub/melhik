@@ -44,13 +44,11 @@ export default function SiteHeader() {
               height={422}
               className="mr-2 h-8 w-7 object-contain object-bottom"
             />
-            melhik
-            <span className="ml-1 inline-block h-3 w-3 rounded-full bg-[#c9f35b] transition-transform duration-300 group-hover:scale-125" />
+            Melhik
+            {/* <span className="ml-1 inline-block h-3 w-3 rounded-full bg-[#c9f35b] transition-transform duration-300 group-hover:scale-125" /> */}
           </Link>
 
-          {/* <span className="hidden rounded-full border border-[#d2d6c6] bg-[#eeefe5] px-2.5 py-0.5 text-[11px] font-semibold text-[#5a6054] md:inline-block">
-            In-Person Tutoring Tracker
-          </span> */}
+          
         </div>
 
         {/* Desktop Navigation Links */}
