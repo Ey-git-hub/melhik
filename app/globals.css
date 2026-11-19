@@ -91,6 +91,17 @@ html.dark [class*="text-[#c9f35b]"] {
   color: #fbb21d !important;
 }
 
+html.dark body,
+html.dark body * {
+  color: #ffffff !important;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #ffffff !important;
+  opacity: 0.7;
+}
+
 html.dark ::-webkit-scrollbar-track {
   background: #0e3b43;
 }
