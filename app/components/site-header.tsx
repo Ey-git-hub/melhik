@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ArrowRight, Menu, X, ChevronDown, Shield, User, HeartHandshake, BookOpen } from "lucide-react";
 
@@ -19,6 +20,13 @@ export default function SiteHeader() {
             href="/"
             className="group flex items-baseline text-[28px] font-extrabold tracking-[-0.06em] text-[#1c221e]"
           >
+            <Image
+              src="/melhik-logo-mark.png"
+              alt=""
+              width={358}
+              height={422}
+              className="mr-2 h-8 w-7 object-contain object-bottom"
+            />
             melhik
             <span className="ml-1 inline-block h-3 w-3 rounded-full bg-[#c9f35b] transition-transform duration-300 group-hover:scale-125" />
           </Link>
