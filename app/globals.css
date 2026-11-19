@@ -37,13 +37,13 @@ html.dark {
 }
 
 html.dark body {
-  background: #082f36;
+  background: #000000;
   color: #f4fbfc;
 }
 
 html.dark [class*="bg-[#f7f7ef]"],
 html.dark [class*="bg-[#edf5f6]"] {
-  background-color: #082f36 !important;
+  background-color: #000000 !important;
 }
 
 html.dark [class*="bg-[#f2f3ea]"],
