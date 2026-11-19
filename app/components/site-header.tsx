@@ -130,13 +130,13 @@ export default function SiteHeader() {
             href="/login"
             className="text-sm font-semibold text-[#2b332c] transition-colors hover:text-[#121614]"
           >
-            Log in
+            Sign In
           </Link>
           <Link
             href="/signup"
             className="group inline-flex items-center gap-2 rounded-full bg-[#1b221d] px-5 py-2.5 text-sm font-bold text-white transition-all duration-200 hover:bg-[#2e3931] hover:shadow-md"
           >
-            <span>Get Started</span>
+            <span>Sign up</span>
             <ArrowRight className="h-4 w-4 text-[#c9f35b] transition-transform duration-200 group-hover:translate-x-0.5" />
           </Link>
         </div>
