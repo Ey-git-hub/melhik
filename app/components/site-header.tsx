@@ -1,15 +1,32 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { ArrowRight, Menu, X, ChevronDown, Shield, User, HeartHandshake, BookOpen } from "lucide-react";
+import { ArrowRight, Menu, X, ChevronDown, Shield, User, HeartHandshake, BookOpen, Moon, Sun } from "lucide-react";
 
 export default function SiteHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [dashboardDropdown, setDashboardDropdown] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    const savedTheme = window.localStorage.getItem("melhik-theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const shouldUseDarkMode = savedTheme ? savedTheme === "dark" : prefersDark;
+
+    document.documentElement.classList.toggle("dark", shouldUseDarkMode);
+    window.setTimeout(() => setDarkMode(shouldUseDarkMode), 0);
+  }, []);
+
+  const toggleDarkMode = () => {
+    const nextDarkMode = !darkMode;
+    setDarkMode(nextDarkMode);
+    document.documentElement.classList.toggle("dark", nextDarkMode);
+    window.localStorage.setItem("melhik-theme", nextDarkMode ? "dark" : "light");
+  };
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-[#dcded3]/80 bg-[#f7f7ef]/95 backdrop-blur-md transition-colors">
@@ -101,6 +118,14 @@ export default function SiteHeader() {
 
         {/* Desktop CTA actions */}
         <div className="hidden items-center gap-4 md:flex">
+          <button
+            type="button"
+            onClick={toggleDarkMode}
+            aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+            className="rounded-full border border-[#d8dacf] p-2 text-[#4f564b] transition-colors hover:bg-[#eeefe5]"
+          >
+            {darkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+          </button>
           <Link
             href="/login"
             className="text-sm font-semibold text-[#2b332c] transition-colors hover:text-[#121614]"
@@ -118,6 +143,14 @@ export default function SiteHeader() {
 
         {/* Mobile menu trigger */}
         <div className="flex items-center gap-2 md:hidden">
+          <button
+            type="button"
+            onClick={toggleDarkMode}
+            aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+            className="rounded-xl border border-[#d8dacf] p-2 text-[#242b26] hover:bg-[#eeefe5]"
+          >
+            {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+          </button>
           <Link
             href="/signup"
             className="rounded-full bg-[#c9f35b] px-3.5 py-1.5 text-xs font-bold text-[#1b221d]"
