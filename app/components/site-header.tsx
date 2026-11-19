@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ArrowRight, Menu, X, ChevronDown, Sparkles, Shield, User, HeartHandshake } from "lucide-react";
+import { ArrowRight, Menu, X, ChevronDown, Shield, User, HeartHandshake, BookOpen } from "lucide-react";
 
 export default function SiteHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -19,12 +19,12 @@ export default function SiteHeader() {
             href="/"
             className="group flex items-baseline text-[28px] font-extrabold tracking-[-0.06em] text-[#1c221e]"
           >
-            unstuck
+            melhik
             <span className="ml-1 inline-block h-3 w-3 rounded-full bg-[#c9f35b] transition-transform duration-300 group-hover:scale-125" />
           </Link>
 
           <span className="hidden rounded-full border border-[#d2d6c6] bg-[#eeefe5] px-2.5 py-0.5 text-[11px] font-semibold text-[#5a6054] md:inline-block">
-            by Melhik
+            In-Person Tutoring Tracker
           </span>
         </div>
 
@@ -37,16 +37,16 @@ export default function SiteHeader() {
             How it works
           </Link>
           <Link
-            href="/#subjects"
+            href="/#who-is-it-for"
             className="text-sm font-medium text-[#4f564b] transition-colors hover:text-[#181d1a]"
           >
-            Subjects
+            Who it&apos;s for
           </Link>
           <Link
-            href="/#why-unstuck"
+            href="/#why-melhik"
             className="text-sm font-medium text-[#4f564b] transition-colors hover:text-[#181d1a]"
           >
-            Why Unstuck
+            Why Melhik
           </Link>
 
           {/* Quick Dashboards Dropdown */}
@@ -56,14 +56,14 @@ export default function SiteHeader() {
               onBlur={() => setTimeout(() => setDashboardDropdown(false), 200)}
               className="flex items-center gap-1.5 text-sm font-semibold text-[#282f2a] hover:text-[#141816]"
             >
-              <span>Explore Portals</span>
+              <span>Portals</span>
               <ChevronDown className="h-4 w-4 text-[#757c70]" />
             </button>
 
             {dashboardDropdown && (
               <div className="absolute right-0 top-full mt-2 w-56 rounded-2xl border border-[#dcdfd2] bg-[#fffefa] p-2 shadow-[0_18px_40px_rgba(25,30,22,0.12)]">
                 <p className="px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.14em] text-[#868d7f]">
-                  Interactive Pages
+                  Dashboards
                 </p>
                 <Link
                   href="/student"
@@ -86,14 +86,6 @@ export default function SiteHeader() {
                   <Shield className="h-4 w-4 text-[#4b438f]" />
                   <span>Admin Dashboard</span>
                 </Link>
-                <div className="my-1 h-px bg-[#e7ebe0]" />
-                <Link
-                  href="/ask"
-                  className="flex items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-semibold text-[#181c19] hover:bg-[#d6f779]/30"
-                >
-                  <Sparkles className="h-4 w-4 text-[#202722]" />
-                  <span>Ask a Question Intake</span>
-                </Link>
               </div>
             )}
           </div>
@@ -108,10 +100,10 @@ export default function SiteHeader() {
             Log in
           </Link>
           <Link
-            href="/ask"
+            href="/signup"
             className="group inline-flex items-center gap-2 rounded-full bg-[#1b221d] px-5 py-2.5 text-sm font-bold text-white transition-all duration-200 hover:bg-[#2e3931] hover:shadow-md"
           >
-            <span>Get unstuck</span>
+            <span>Get Started</span>
             <ArrowRight className="h-4 w-4 text-[#c9f35b] transition-transform duration-200 group-hover:translate-x-0.5" />
           </Link>
         </div>
@@ -119,10 +111,10 @@ export default function SiteHeader() {
         {/* Mobile menu trigger */}
         <div className="flex items-center gap-2 md:hidden">
           <Link
-            href="/ask"
+            href="/signup"
             className="rounded-full bg-[#c9f35b] px-3.5 py-1.5 text-xs font-bold text-[#1b221d]"
           >
-            Get unstuck
+            Get Started
           </Link>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -146,37 +138,37 @@ export default function SiteHeader() {
               How it works
             </Link>
             <Link
-              href="/#subjects"
+              href="/#who-is-it-for"
               onClick={() => setMobileMenuOpen(false)}
               className="text-base font-semibold text-[#2a312a]"
             >
-              Subjects
+              Who it&apos;s for
             </Link>
             <Link
-              href="/#why-unstuck"
+              href="/#why-melhik"
               onClick={() => setMobileMenuOpen(false)}
               className="text-base font-semibold text-[#2a312a]"
             >
-              Why Unstuck
+              Why Melhik
             </Link>
 
             <div className="my-2 h-px bg-[#e3e7db]" />
             <p className="text-[11px] font-bold uppercase tracking-wider text-[#868d7f]">
-              Portals & Dashboards
+              Dashboards
             </p>
             <Link
               href="/student"
               onClick={() => setMobileMenuOpen(false)}
               className="flex items-center gap-2 text-sm font-semibold text-[#276e4c]"
             >
-              <User className="h-4 w-4" /> Student Space
+              <User className="h-4 w-4" /> Student Dashboard
             </Link>
             <Link
               href="/parent"
               onClick={() => setMobileMenuOpen(false)}
               className="flex items-center gap-2 text-sm font-semibold text-[#925524]"
             >
-              <HeartHandshake className="h-4 w-4" /> Parent Space
+              <HeartHandshake className="h-4 w-4" /> Parent Dashboard
             </Link>
             <Link
               href="/admin"
@@ -184,13 +176,6 @@ export default function SiteHeader() {
               className="flex items-center gap-2 text-sm font-semibold text-[#483d89]"
             >
               <Shield className="h-4 w-4" /> Admin Console
-            </Link>
-            <Link
-              href="/ask"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-2 text-sm font-semibold text-[#1f2420]"
-            >
-              <Sparkles className="h-4 w-4 text-[#8ec823]" /> Intake Screen
             </Link>
 
             <div className="my-2 h-px bg-[#e3e7db]" />
@@ -216,4 +201,3 @@ export default function SiteHeader() {
     </header>
   );
 }
-
