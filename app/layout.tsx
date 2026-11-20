@@ -13,9 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "unstuck · Tutoring that starts with you",
-  description:
-    "Not another endless list of tutors. Bring your question, find your kind of explanation, and take the next step.",
+  title: "Melhik",
+  
 };
 
 export default function RootLayout({
