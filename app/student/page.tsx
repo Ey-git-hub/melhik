@@ -53,16 +53,14 @@ export default function StudentPage() {
       >
         <div className="flex items-center justify-between px-2">
           <Link href="/" className="flex items-center gap-2.5">
-            <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-[#1a211c] text-sm font-extrabold text-[#c9f35b]">
-              m
-            </span>
+            
             <div className="flex flex-col">
               <span className="text-lg font-extrabold tracking-tight text-[#1c231e]">
-                melhik
+                Melhik
               </span>
-              <span className="text-[10px] font-bold uppercase tracking-wider text-[#1e7a4d]">
+              {/* <span className="text-[10px] font-bold uppercase tracking-wider text-[#1e7a4d]">
                 Student Space
-              </span>
+              </span> */}
             </div>
           </Link>
           <button
@@ -81,24 +79,12 @@ export default function StudentPage() {
           <nav className="mt-3 space-y-1">
             <Link
               href="/student"
-              className="flex items-center gap-3 rounded-xl bg-[#1b221d] px-3 py-2.5 text-xs font-bold text-[#c9f35b] shadow-sm"
+              className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-xs font-bold text-gray"
             >
               <BookOpen className="h-4 w-4" />
               <span>Overview & Threads</span>
             </Link>
 
-            <Link
-              href="/ask"
-              className="flex items-center justify-between rounded-xl px-3 py-2.5 text-xs font-bold text-[#535d4f] hover:bg-[#eef2e6] hover:text-[#1c221e]"
-            >
-              <div className="flex items-center gap-3">
-                <Sparkles className="h-4 w-4 text-[#8cbd22]" />
-                <span>Ask a Question</span>
-              </div>
-              <span className="rounded-full bg-[#c9f35b] px-2 py-0.5 text-[9px] font-black text-[#1b221d]">
-                New
-              </span>
-            </Link>
 
             <a
               href="#upcoming"
@@ -116,27 +102,7 @@ export default function StudentPage() {
               <span>My Tutors</span>
             </a>
           </nav>
-
-          {/* Quick links to Parent & Admin */}
-          <div className="mt-8 rounded-2xl border border-[#dfe4d8] bg-[#f8faf3] p-3.5">
-            <p className="text-[11px] font-bold text-[#2d352b]">Switch view</p>
-            <div className="mt-2 space-y-1.5">
-              <Link
-                href="/parent"
-                className="flex items-center justify-between rounded-lg px-2 py-1 text-xs text-[#525b4e] hover:bg-[#ebf0e3]"
-              >
-                <span>Parent Dashboard</span>
-                <ArrowRight className="h-3 w-3" />
-              </Link>
-              <Link
-                href="/admin"
-                className="flex items-center justify-between rounded-lg px-2 py-1 text-xs text-[#525b4e] hover:bg-[#ebf0e3]"
-              >
-                <span>Admin Dashboard</span>
-                <ArrowRight className="h-3 w-3" />
-              </Link>
-            </div>
-          </div>
+          
         </div>
 
         {/* Profile Card */}
@@ -164,21 +130,8 @@ export default function StudentPage() {
             <Menu className="h-5 w-5" />
           </button>
 
-          {/* Quick Search or Greeting */}
-          <div className="flex items-center gap-2">
-            <span className="rounded-full bg-[#e8f6ec] px-3 py-1 text-xs font-bold text-[#1b6b45]">
-              🔥 12-Day Streak Active
-            </span>
-          </div>
-
           <div className="flex items-center gap-3">
-            <Link
-              href="/ask"
-              className="flex items-center gap-2 rounded-full bg-[#c9f35b] px-4 py-2 text-xs font-bold text-[#1b221d] shadow-xs hover:scale-105 transition-transform"
-            >
-              <Sparkles className="h-3.5 w-3.5" />
-              <span>Ask a Question</span>
-            </Link>
+           
 
             <Link
               href="/"
@@ -195,24 +148,24 @@ export default function StudentPage() {
           <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
             <div>
               <span className="text-[10px] font-extrabold uppercase tracking-[0.16em] text-[#868f80]">
-                Hey Jordan, what&apos;s the sticky bit?
+                Hey Jordan
               </span>
               <h1 className="mt-1 text-2xl font-extrabold tracking-tight text-[#1a211c] sm:text-3xl">
                 Your Learning Space
               </h1>
-              <p className="mt-1 text-xs text-[#6e7668]">
+              {/* <p className="mt-1 text-xs text-[#6e7668]">
                 Review saved explanations, take your next practice step, or join today&apos;s session with Maya.
-              </p>
+              </p> */}
             </div>
 
             {/* Quick Action to Book */}
-            <button
+            {/* <button
               onClick={() => setClassroomOpen(true)}
               className="flex items-center gap-2 rounded-2xl bg-[#1b221d] px-5 py-3 text-xs font-bold text-white shadow-sm hover:bg-[#2c372f]"
             >
               <Video className="h-4 w-4 text-[#c9f35b]" />
               <span>Join Maya&apos;s Room (02:30 PM)</span>
-            </button>
+            </button> */}
           </div>
 
           {/* Student Stats */}
