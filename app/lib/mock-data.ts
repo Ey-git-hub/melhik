@@ -115,10 +115,10 @@ export const adminStats = [
 
 // Student Stats
 export const studentStats = [
-  { label: "Active learning streak", value: "12 days 🔥", change: "+3 days record", tone: "mint" },
-  { label: "Algebra II mastery", value: "82%", change: "+14% this month", tone: "lavender" },
-  { label: "Sessions completed", value: "8 sessions", change: "Next today 2:30 PM", tone: "peach" },
-  { label: "Time invested", value: "24.5 hrs", change: "Goal: 30 hrs/mo", tone: "blue" },
+  { label: "Active learning streak", value: "12 days ", change: "", tone: "mint" },
+  { label: "Algebra II mastery", value: "82%", change: "", tone: "lavender" },
+  { label: "Sessions completed", value: "8 sessions", change: "", tone: "peach" },
+  { label: "Time invested", value: "24.5 hrs", change: "", tone: "blue" },
 ];
 
 // Parent Stats
