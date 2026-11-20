@@ -59,8 +59,14 @@ export default function LoginPage() {
                 href="/"
                 className="inline-flex items-baseline text-2xl font-extrabold tracking-[-0.06em] text-[#1a211c]"
               >
-                unstuck
-                <span className="ml-1 inline-block h-2.5 w-2.5 rounded-full bg-[#c9f35b]" />
+                {/* <Image
+                              src="/melhik-logo-mark.png"
+                              alt=""
+                              width={358}
+                              height={422}
+                              className="mr-2 h-8 w-7 object-contain object-bottom"
+                            /> */}
+                Melhik
               </Link>
               <h1 className="mt-4 text-2xl font-extrabold tracking-tight text-[#1c221e]">
                 Welcome back
@@ -232,7 +238,7 @@ export default function LoginPage() {
         </div>
       </main>
 
-      <SiteFooter />
+      {/* <SiteFooter /> */}
     </div>
   );
 }
