@@ -51,15 +51,12 @@ export default function SignupPage() {
                 href="/"
                 className="inline-flex items-baseline text-2xl font-extrabold tracking-[-0.06em] text-[#1a211c]"
               >
-                unstuck
-                <span className="ml-1 inline-block h-2.5 w-2.5 rounded-full bg-[#c9f35b]" />
+                Melhik
               </Link>
               <h1 className="mt-4 text-2xl font-extrabold tracking-tight text-[#1c221e]">
                 Create your account
               </h1>
-              <p className="mt-1.5 text-xs text-[#6e7568]">
-                Start with one question. Get clarity that sticks.
-              </p>
+              
             </div>
 
             {/* Role Selection */}
@@ -232,7 +229,7 @@ export default function SignupPage() {
         </div>
       </main>
 
-      <SiteFooter />
+      {/* <SiteFooter /> */}
     </div>
   );
 }
