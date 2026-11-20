@@ -45,7 +45,6 @@ export default function SiteHeader() {
               className="mr-2 h-8 w-7 object-contain object-bottom"
             />
             Melhik
-            {/* <span className="ml-1 inline-block h-3 w-3 rounded-full bg-[#c9f35b] transition-transform duration-300 group-hover:scale-125" /> */}
           </Link>
 
           
@@ -53,12 +52,7 @@ export default function SiteHeader() {
 
         {/* Desktop Navigation Links */}
         <nav className="hidden items-center gap-8 md:flex">
-          <Link
-            href="/#how-it-works"
-            className="text-sm font-medium text-[#4f564b] transition-colors hover:text-[#181d1a]"
-          >
-            How it works
-          </Link>
+         
           <Link
             href="/#who-is-it-for"
             className="text-sm font-medium text-[#4f564b] transition-colors hover:text-[#181d1a]"
