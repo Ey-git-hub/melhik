@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
   Check,
@@ -16,7 +17,6 @@ import {
 } from "lucide-react";
 import SiteHeader from "@/app/components/site-header";
 import SiteFooter from "@/app/components/site-footer";
-import SessionTrackerPreview from "@/app/components/session-tracker-preview";
 import ActivityFeedPreview from "@/app/components/activity-feed-preview";
 import InteractiveFaq from "@/app/components/interactive-faq";
 
@@ -33,12 +33,6 @@ export default function Home() {
           <div className="grid items-center gap-11 lg:grid-cols-[1.1fr_1fr]">
             {/* Hero Left Content */}
             <div>
-              {/* Eyebrow badge */}
-              {/* <div className="inline-flex items-center gap-2 rounded-full border border-[#d6dad0] bg-[#eef0e7] px-4 py-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[#555d51]">
-                <span className="h-2 w-2 rounded-full bg-[#1b221d]" />
-                In-person tutoring, completely tracked
-              </div> */}
-
               {/* Giant Headline */}
               <h1 className="mt-6 text-[clamp(2.75rem,6.2vw,5.1rem)] font-extrabold leading-[0.96] tracking-[-0.065em] text-[#1a211c]">
                 Face-to-face.
@@ -69,9 +63,18 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Hero Right: Live Session Tracker Preview */}
-            <div className="">
-              <SessionTrackerPreview />
+            {/* Hero Right: Students learning together */}
+            <div className="flex items-center justify-center">
+              <Image
+                src="/face-to-face.png"
+                alt="Students learning together around a table"
+                width={601}
+                height={489}
+                className="h-auto w-full max-w-[600px] object-contain"
+                priority
+                quality={100}
+                unoptimized
+              />
             </div>
           </div>
         </section>
